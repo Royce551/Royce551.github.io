@@ -13,9 +13,13 @@ body {
     background: #2C2F33;
     justify-items: center;
     text-align: center;
+    margin: 0;
+}
+hr {
+ width: 60%;
 }
 #header {
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
     padding: 20px 20px 20px 100px;
     background: #13293D;
     justify-items: left;
@@ -57,21 +61,22 @@ a:visited {
 }
 
 #navbar li {
-    margin-left: 20px;
+    margin-left: 0;
     display: inline;
 }
 
 #liststyle ul {
     display: flex;
-    flex-basis: 100%;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding-left: 0;
+    flex-shrink: 10;
 }
 
 #liststyle li {
-    width: 200px;
+   
 }
 
 #liststyle p {
