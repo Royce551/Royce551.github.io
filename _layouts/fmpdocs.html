@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - FRESHMusicPlayer Docs</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sidebar">
+            <small>FRESHMusicPlayer</small>
+
+                <p><a href="index.html">Introduction</a></p>
+                <p><a href="tour.html">Tour</a></p>
+                <p><a href="playing.html">Playing Music</a></p>
+                <p><a href="library.html">The Library</a></p>
+
+            <small>FRESHMusicPlayer Core</small>
+    </div>
+    <div class="sidebarcontent">
+        {% include navigation.html %}
+        <div class="fmpheader">
+            <nav>
+                <small><a href="../index.html">Home</a> > Docs > {{ page.title }}</small>
+                <h1>{{ page.title }}</h1>
+            </nav>
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
+  </body>
+</html>
+
