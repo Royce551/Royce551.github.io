@@ -10,10 +10,13 @@
   --green: #69B578;
 
   --sidebar_size: 200px;
+
+  --content_font_size: 14px;
+  --small_font_size: 9px;
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--content_font_size);
   font-family: 'IBM Plex Sans', sans-serif;
   background: var(--foreground_color);
   color: var(--primary_text_color);
@@ -57,8 +60,7 @@ a:visited {
   left: 0;
   background-color: var(--secondary_color);
   overflow-x: hidden;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 .sidebar small {
@@ -109,7 +111,7 @@ a:visited {
 }
 
 .navbar {
-  font-size: 10px;
+  font-size: var(--small_font_size);
   margin-bottom: 10px;
 }
 
@@ -126,7 +128,7 @@ a:visited {
 }
 
 .footer {
-  font-size: 10px;
+  font-size: var(--small_font_size);
   text-align: center;
 }
 

@@ -1,0 +1,35 @@
+---
+layout: fmpdocs
+title: "Basic Usage"
+---
+
+<h1>Basic Usage</h1>
+<p>Most of FMP Core's functionality is contained in the Player class.</p>
+<pre>
+    <code>
+        using FRESHMusicPlayer;
+
+        var player = new Player();
+        var path = "Can be a file path or URL to a network stream";
+        player.Queue.Add(path); // Everything in FMP runs on a queue
+        player.PlayMusic(); // Begin playing through the queue
+                            // Note: This is not blocking!
+
+        player.PlayMusic(path); // If you're playing only one track, this is a shortcut for
+                                // clearing the queue, adding the path to the queue, and then playing.
+
+        player.Volume = 0.5f;
+        player.CurrentTime = TimeSpan.FromSeconds(10); // Seek 10 seconds into the track
+        Console.WriteLine(player.TotalTime.ToString()); // Get the total length of the playing track
+        Console.WriteLine(player.FilePath) // Get the path of the track FMP is currently playing
+
+        player.PauseMusic(); // Pause
+        player.ResumeMusic(); // Resume the paused track
+        player.NextSong(); // Skip next
+        player.StopMusic(); // Completely stop and clean up
+    </code>
+</pre>
+<p>
+    For more information, check out the <a href="https://github.com/Royce551/FRESHMusicPlayer-Core/tree/master/FRESHMusicPlayer.Player/FRESHMusicPlayer.Player">source code.</a>
+    The main points of interests are Player.cs, PlayQueue.cs, and Library.cs, in Handlers.
+</p>

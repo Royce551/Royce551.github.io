@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Playing Music - FRESHMusicPlayer Docs</title>
+    <title>Audio Backends - FRESHMusicPlayer Docs</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
@@ -51,22 +51,35 @@
   </nav>
         <div class="fmpheader">
             <nav>
-                <small><a href="../index.html">Home</a> > Docs > Playing Music</small>
-                <h1>Playing Music</h1>
+                <small><a href="../index.html">Home</a> > Docs > Audio Backends</small>
+                <h1>Audio Backends</h1>
             </nav>
         </div>
         <div class="content">
-            <h1>The Queue</h1>
-<p>The queue is the list of tracks that FMP will play. You can view it by clicking the Queue icon in the Navbar.</p>
-<img src="/assets/images/fmp/docs-queue.png"/>
-<p>
-    From here, you can add or remove tracks from the queue. Double click a entry or click its play button to skip to it.
-    Click its delete button to remove it from the queue.
+            <p>
+    FMP Core uses audio backends to actually play audio. It comes with a NAudio backend, which is good
+    for playing audio on Windows, but if you need to play additional file types, or if you need to run on other platforms,
+    you'll need to include other backends in your project.
 </p>
 
-<h1>Playing Music</h1>
-<p>You can play a track from the library by double clicking it, or clicking its Play button.</p>
-<p>To open a track that isn't in the library, drag it into the Controls Box, or click Open in the Overflow Menu.</p>
+<h1>Including extra backends</h1>
+<p>
+    FMP searches for audio backends in 2 places: %appdata%/FRESHMusicPlayer/Backends, and Backends in the directory
+    where the app is. The former directory is mostly there for users to extend FMP. Put any backends you want to bundle
+    with your app in a Backends folder, and then copy them over to the output directory.
+</p>
+
+<h1>Making your own backends</h1>
+<p>
+    To make your own audio backend, create a .NET Standard (if you're targeting FMP-Avalonia and .NET Core/5 apps in general), or
+    a .NET Framework (if you're targeting FMP-WPF and .NET Framework apps) class library that implements IAudioBackend. 
+</p>
+<p>Some extra notes:</p>
+<ul>
+    <li>Volume is a range between 0 - 1.</li>
+    <li>OnPlaybackStopped is expected to be invoked when stopping or changing tracks (not when pausing)</li>
+    <li>Since FMP Core was originally written for just NAudio, if you have any doubts about behavior, you should probably look at NAudio.</li>
+</ul>
         </div>
         <div class="footer">
     <hr>

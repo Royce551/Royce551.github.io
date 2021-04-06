@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Playing Music - FRESHMusicPlayer Docs</title>
+    <title>Basic Usage - FRESHMusicPlayer Docs</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
@@ -51,22 +51,41 @@
   </nav>
         <div class="fmpheader">
             <nav>
-                <small><a href="../index.html">Home</a> > Docs > Playing Music</small>
-                <h1>Playing Music</h1>
+                <small><a href="../index.html">Home</a> > Docs > Basic Usage</small>
+                <h1>Basic Usage</h1>
             </nav>
         </div>
         <div class="content">
-            <h1>The Queue</h1>
-<p>The queue is the list of tracks that FMP will play. You can view it by clicking the Queue icon in the Navbar.</p>
-<img src="/assets/images/fmp/docs-queue.png"/>
-<p>
-    From here, you can add or remove tracks from the queue. Double click a entry or click its play button to skip to it.
-    Click its delete button to remove it from the queue.
-</p>
+            <h1>Basic Usage</h1>
+<p>Most of FMP Core's functionality is contained in the Player class.</p>
+<pre>
+    <code>
+        using FRESHMusicPlayer;
 
-<h1>Playing Music</h1>
-<p>You can play a track from the library by double clicking it, or clicking its Play button.</p>
-<p>To open a track that isn't in the library, drag it into the Controls Box, or click Open in the Overflow Menu.</p>
+        var player = new Player();
+        var path = "Can be a file path or URL to a network stream";
+        player.Queue.Add(path); // Everything in FMP runs on a queue
+        player.PlayMusic(); // Begin playing through the queue
+                            // Note: This is not blocking!
+
+        player.PlayMusic(path); // If you're playing only one track, this is a shortcut for
+                                // clearing the queue, adding the path to the queue, and then playing.
+
+        player.Volume = 0.5f;
+        player.CurrentTime = TimeSpan.FromSeconds(10); // Seek 10 seconds into the track
+        Console.WriteLine(player.TotalTime.ToString()); // Get the total length of the playing track
+        Console.WriteLine(player.FilePath) // Get the path of the track FMP is currently playing
+
+        player.PauseMusic(); // Pause
+        player.ResumeMusic(); // Resume the paused track
+        player.NextSong(); // Skip next
+        player.StopMusic(); // Completely stop and clean up
+    </code>
+</pre>
+<p>
+    For more information, check out the <a href="https://github.com/Royce551/FRESHMusicPlayer-Core/tree/master/FRESHMusicPlayer.Player/FRESHMusicPlayer.Player">source code.</a>
+    The main points of interests are Player.cs, PlayQueue.cs, and Library.cs, in Handlers.
+</p>
         </div>
         <div class="footer">
     <hr>
