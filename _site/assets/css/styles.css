@@ -8,6 +8,7 @@
   --blue: #338BC1;
   --dark_blue: #13293D;
   --green: #69B578;
+  --red: #d5463f;
 
   --sidebar_size: 200px;
 
@@ -44,6 +45,11 @@ a:link {
 }
 a:visited {
   color: var(--blue);
+}
+
+.dangerous {
+  background-color: var(--red);
+  padding: 10px;
 }
 
 .centerpresentation {
@@ -138,4 +144,12 @@ a:visited {
   background: var(--dark_blue);
   justify-items: left;
   text-align: left;
+}
+
+.sidebysideleft {
+  width: 50%;
+  float: left;
+}
+.sidebysideright {
+  margin-left: 50%
 }

@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <meta property="og:description" content="squiddy squiddy squid squid">
+    <meta property="og:site_name" content="Squid Grill">
+    <meta property="og:title" content="FRESHMusicPlayer Downloads">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://royce551.github.io">
   </head>
   <body>
     <nav>
@@ -15,7 +20,7 @@
           Squid Grill Home
         </a>
       
-        <a href="/freshmusicplayer/">
+        <a href="/FRESHMusicPlayer/">
           FRESHMusicPlayer
         </a>
       
@@ -36,19 +41,34 @@
     </nav>
 </div>
 
-<div class="content">
-    <h2>Windows</h2>
-    <p><a href="https://github.com/royce551/freshmusicplayer/releases/latest">Download for Windows</a></p>
-    <p>
-        Runs on Windows 7 and later. If you have an older version of Windows, you might have to get a newer version of
-        .NET Framework <a href="https://dotnet.microsoft.com/download">here.</a>
-    </p>
-
-    <h2>Mac and Linux</h2>
-    <p>
-        The Mac and Linux version of FRESHMusicPlayer are still in development - if you have a .NET development environment,
-        you can try it out <a href="https://github.com/royce551/freshmusicplayer-avalonia">here!</a>
-    </p>
+<div class="sidebysideleft">
+    <div class="content">
+        <h1>Windows</h1>
+        <p><a href="https://github.com/royce551/freshmusicplayer/releases/latest">Download for Windows</a></p>
+        <p>Runs on Windows 7 and later.</p>
+        <p>
+            Requires .NET Framework 4.7.2; this is bundled with newer versions of Windows, on older versions, you might have to grab it
+            <a href="https://dotnet.microsoft.com/download">here.</a>
+        </p>
+    </div>
+</div>
+<div class="sidebysideright">
+    <div class="content">
+        <h1>Mac and Linux</h1>
+        <p><a href="https://drive.google.com/drive/folders/1VgI9xZmERlkMpzdtca9paK4eH2JDHb_x?usp=sharing">Download for Mac and Linux</a></p>
+        <p>
+            Runs on macOS High Sierra and later and the Linux versions shown 
+            <a href="https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md">here.</a>
+        </p>
+        <div class="dangerous">
+            <p>- The Mac and Linux versions of FMP are still in development and aren't stable!</p>
+            <p>- The macOS version is smashed, will figure out how to fix eventually</p>
+            <p>
+                - Due to a bug with Avalonia, the Linux version will crash on startup if you don't have certain Microsoft fonts. You can grab them
+                  <a href="https://aur.archlinux.org/packages/ttf-ms-fonts/">here.</a>
+            </p>
+        </div>
+    </div>
 </div>
     <div class="footer">
     <hr>
