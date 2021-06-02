@@ -5,26 +5,15 @@ title: Other Projects
 
 <div class="content">
 
-    <p>These are some of my smaller projects. May or may not be interesting.</p>
-
+    <h1>All my projects so far</h1>
     <ul>
-        <li>
-            <a href="https://github.com/Royce551/Squidphotos" target="_blank">
-                <h3>Squidphotos</h3></a>
-                <p>low BS, super fast image viewer</p>
-            
-        </li>
-        <li>
-            <a href="https://github.com/Royce551/Condownloader" target="_blank">
-                <h3>Condownloader</h3></a>
-                <p>smol app for downloading and converting videos/audio using youtube-dl and ffmpeg, with multitasking support!</p>
-            
-        </li>
-        <li>
-            <a href="https://github.com/Royce551/ShooterGame" target="_blank">
-                <h3>ShooterGame</h3></a>
-                <p>some kind of bullet hell game, first time making a game</p>
-            
-        </li>
-    </ul>
+        {% assign sorted_projects = site.data.projects | sort: 'name' %}
+        {% for item in sorted_projects %}
+            <li>
+                <a href="{{ item.link }}"> 
+                    <h3>{{ item.name }}</h3></a>
+                    <p>{{ item.description }}</p>
+                
+            </li>
+        {% endfor %}
 </div>
