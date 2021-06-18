@@ -1,0 +1,22 @@
+---
+layout: defaultwithcodehighlighting
+---
+
+<div class="fmpheader">
+    <small><a href="/index.html">Home</a> > <a href="/news.html">News</a> > {{ page.title }}</small>
+    <h1>{{page.title}}</h1>
+    <small>{{ page.date | date_to_string }}</small>
+</div>
+
+<div class="content">
+    {{ content }}
+
+    <hr>
+    <div class="sidebysideleft">
+        <p><a href="{{page.previous.url}}">Previous: {{page.previous.title}}</a></p>
+    </div>
+    <div class="sidebysideright">
+        <p><a href="{{page.next.url}}">Next: {{page.next.title}}</a></p>
+    </div>
+</div>
+
