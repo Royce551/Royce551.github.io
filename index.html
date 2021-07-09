@@ -10,10 +10,27 @@ title: Home
     </div>
 </div>
 
-<h2>News</h2>
-<p>TODO: Recent posts go here</p>
+<h2>Blog</h2>
+
+    <div class="list">
+        <ul>
+            {% for post in site.posts limit:3 %}
+                <li>
+                    <div class="secondarycard">
+                        <a href="{{ post.url }}">
+                            <h2>{{ post.title }}</h2>
+                            <h4>{{ post.date | date_to_string: "ordinal", "US" }}</h4>
+                            {{ post.excerpt | truncate: 100, '...'}}
+                        </a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    
 <div class="fancyright">
-    <a href="/news.html">> All News</a>
+    <a href="/news.html">> All Entries</a>
 </div>
 
 <h2>Projects</h2>

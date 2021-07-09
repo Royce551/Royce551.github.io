@@ -54,6 +54,11 @@ a:visited {
   padding: 10px;
   border-radius: 7px;
 }
+.secondarycard {
+  background-color: var(--secondary_color);
+  padding: 10px;
+  border-radius: 7px;
+}
 
 .centerpresentation {
   text-align: center;
