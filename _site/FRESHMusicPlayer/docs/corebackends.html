@@ -13,25 +13,31 @@
   </head>
   <body>
     <div class="cardbody">
-    <div class="sidebar">
-            <small>FRESHMusicPlayer</small>
 
+      <div class="content">
+
+        <div class="sidebysideminorleft">
+          <div class="sidebar">
+            <small>FRESHMusicPlayer</small>
+    
             <p><a href="index.html">Introduction</a></p>
             <p><a href="tour.html">Tour</a></p>
             <p><a href="playing.html">Playing Music</a></p>
             <p><a href="library.html">The Library</a></p>
             <p><a href="options.html">Options</a></p>
             <p><a href="credits.html">Credits</a></p>
-
+    
             <small>FRESHMusicPlayer Core</small>
-
+    
             <p><a href="corebasics.html">Basic Usage</a></p>
             <p><a href="corebackends.html">Audio Backends</a></p>
             <p><a href="corebreaking.html">Breaking Changes</a></p>
-    </div>
-   
-      <div class="sidebarcontent">
-        <nav>
+          </div>
+        </div>
+
+        <div class="sidebysidemajorright">
+          <div>
+            <nav>
     <div class="navbar">
         
         <a href="/">
@@ -56,14 +62,16 @@
       
     </div>
   </nav>
-        <div class="fmpheader">
-            <nav>
-                <small><a href="../index.html">Home</a> > Docs > Audio Backends</small>
-                <h1>Audio Backends</h1>
-            </nav>
-        </div>
-        <div class="content">
-            <p>
+            <div class="fmpheader">
+              <div class="content">
+                <nav>
+                  <small><a href="../index.html">Home</a> > Docs > Audio Backends</small>
+                  <h1>Audio Backends</h1>
+              </nav>
+              </div>
+            </div>
+            <div class="content">
+                <p>
     FMP Core uses audio backends to actually play audio. It comes with a NAudio backend, which is good
     for playing audio on Windows, but if you need to play additional file types, or if you need to run on other platforms,
     you'll need to include other backends in your project.
@@ -87,13 +95,15 @@
     <li>OnPlaybackStopped is expected to be invoked when stopping or changing tracks (not when pausing)</li>
     <li>Since FMP Core was originally written for just NAudio, if you have any doubts about behavior, you should probably look at NAudio.</li>
 </ul>
-        </div>
-        <div class="footer">
+            </div>
+            <div class="footer">
     <hr>
-    <p>Copyright @ Squid Grill 2021 | <a href="https://github.com/royce551/Royce551.github.io">Source Code</a></p>
+    Copyright @ Squid Grill 2021 | SquidWeb 9.04.2021 - <a href="https://github.com/royce551/Royce551.github.io">Source Code</a> | powered by <a href="https://pages.github.com">GitHub Pages</a>
 </div>
-    </div>
-    </div>
+          </div>
+        </div>
+
+      </div>
     
   </body>
 </html>

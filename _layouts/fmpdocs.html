@@ -13,37 +13,47 @@
   </head>
   <body>
     <div class="cardbody">
-    <div class="sidebar">
-            <small>FRESHMusicPlayer</small>
 
+      <div class="content">
+
+        <div class="sidebysideminorleft">
+          <div class="sidebar">
+            <small>FRESHMusicPlayer</small>
+    
             <p><a href="index.html">Introduction</a></p>
             <p><a href="tour.html">Tour</a></p>
             <p><a href="playing.html">Playing Music</a></p>
             <p><a href="library.html">The Library</a></p>
             <p><a href="options.html">Options</a></p>
             <p><a href="credits.html">Credits</a></p>
-
+    
             <small>FRESHMusicPlayer Core</small>
-
+    
             <p><a href="corebasics.html">Basic Usage</a></p>
             <p><a href="corebackends.html">Audio Backends</a></p>
             <p><a href="corebreaking.html">Breaking Changes</a></p>
-    </div>
-   
-      <div class="sidebarcontent">
-        {% include navigation.html %}
-        <div class="fmpheader">
-            <nav>
-                <small><a href="../index.html">Home</a> > Docs > {{ page.title }}</small>
-                <h1>{{ page.title }}</h1>
-            </nav>
+          </div>
         </div>
-        <div class="content">
-            {{ content }}
+
+        <div class="sidebysidemajorright">
+          <div>
+            {% include navigation.html %}
+            <div class="fmpheader">
+              <div class="content">
+                <nav>
+                  <small><a href="../index.html">Home</a> > Docs > {{ page.title }}</small>
+                  <h1>{{ page.title }}</h1>
+              </nav>
+              </div>
+            </div>
+            <div class="content">
+                {{ content }}
+            </div>
+            {% include footer.html %}
+          </div>
         </div>
-        {% include footer.html %}
-    </div>
-    </div>
+
+      </div>
     
   </body>
 </html>
