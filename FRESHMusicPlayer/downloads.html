@@ -14,43 +14,52 @@ title: "FRESHMusicPlayer Downloads"
 
 <div class="sidebysideleft">
     <div class="content">
-        <h1>Windows</h1>
-        <p><a href="https://github.com/royce551/freshmusicplayer/releases/latest">Download for Windows</a></p>
+        <h2>Windows</h2>
 
-        <h3>System Requirements</h3>
-        <p>Runs on Windows 7 and later.</p>
-        <p>
-            Requires .NET Framework 4.7.2; this is bundled with newer versions of Windows, on older versions, you might have to grab it
-            <a href="https://dotnet.microsoft.com/download">here.</a>
-        </p>
+        <a href="https://github.com/royce551/freshmusicplayer/releases/latest/download/Setup.exe"><button>Download latest installer (~3MB)</button></a>
+        <a href="https://github.com/royce551/freshmusicplayer/releases/latest/download/Standalone.zip"><button>Download latest standalone (~2MB)</button></a>
+
+        <p><a href="https://github.com/royce551/freshmusicplayer/releases/latest">Changelogs, MSI installers, older releases</a></p>
+
+        <div class="secondarycard">
+            <h3>System Requirements</h3>
+            <p>Runs on Windows 7 and later.</p>
+            <p>
+                Requires .NET Framework 4.7.2; this is bundled with newer versions of Windows, on older versions, you might have to grab it
+                <a href="https://dotnet.microsoft.com/download">here.</a>
+            </p>
+        </div>
+        
     </div>
 </div>
 <div class="sidebysideright">
     <div class="content">
-        <h1>Mac and Linux</h1>
-        
-        <h2>Stable Versions</h2>
+        <h2>Mac and Linux</h2>
+    
+        <h3>Stable Versions</h3>
         <p>Under Construction: links coming soon!</p>
 
-        <h2>Blueprint Versions</h2>
-        <p>Want to be on the cutting edge? You can get the absolute latest builds of FMP here.</p>
-        <div class="dangerous">
-            These are development builds of FMP and may not be stable!
-        </div>
+        <hr/>
 
-        <h3>Mac</h3>
+        <h3>Blueprint Versions</h3>
+        <p>Want to be on the cutting edge? These are the absolute latest, <b>but unstable</b> builds of FMP.</p>
+
+        <h4>Mac</h4>
         <p>Grab a DMG from the latest workflow run <a href="https://github.com/Royce551/FRESHMusicPlayer/actions/workflows/macos.yml">here.</a></p>
 
-        <h3>Linux - Flatpak</h3>
+        <h4>Linux - Flatpak</h4>
         <p><code>flatpak remote-add vicr123-partner-blueprint https://vicr123.com/flatpak-assets/vicr123-partner-blueprint.flatpakrepo</code></p>
         <p>Then grab FRESHMusicPlayer Blueprint in your favorite package manager</p>
-        <h3>Linux - AppImage</h3>
+        <h4>Linux - AppImage</h4>
         <p>Grab an appimage from the latest workflow run <a href="https://github.com/Royce551/FRESHMusicPlayer/actions/workflows/linux.yml">here.</a></p>
 
-        <h3>System Requirements</h3>
-        <p>
-            Runs on macOS High Sierra and later and the Linux versions shown 
-            <a href="https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md">here.</a>
-        </p>
+        <div class="secondarycard">
+            <h3>System Requirements</h3>
+            <p>Runs on MacOS High Sierra, Debian 9, Ubuntu 16.5, Fedora 30, and later</p>
+            <p>Sorry, only x64 is supported right now (M1 Macs are supported through Rosetta)</p>
+            <small>(Other platforms that run .NET 6 could work too!)</small>
+        </div>
+
+        
     </div>
 </div>
