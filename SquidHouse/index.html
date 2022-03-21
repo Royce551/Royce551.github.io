@@ -1,0 +1,70 @@
+---
+layout: default
+title: Home
+---
+
+<div class="squidheader">
+    <h1>Hi! I'm Royce!</h1>
+    <div class="fancyright">
+        <a href="/aboutme.html">> More about me</a>
+    </div>
+</div>
+
+<h2>News</h2>
+
+    <div class="list">
+        <ul>
+            {% for post in site.posts limit:4 %}
+                <li>
+                    <div class="secondarycard">
+                        <a href="{{ post.url }}">
+                            <h2>{{ post.title }}</h2>
+                            <h4>{{ post.date | date_to_string: "ordinal", "US" }}</h4>
+                            {{ post.excerpt | truncate: 100, '...'}}
+                        </a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    
+<div class="fancyright">
+    <a href="/news.html">> All Entries</a>
+</div>
+
+<h2>Projects</h2>
+<div class="centerpresentation">
+    <div class="list">
+        <ul>
+            {% for item in site.data.projects %}
+                {% if item.category contains "Featured" %}
+                    <li>
+                        <a href="{{ item.link }}">
+                            <img src="{{ item.icon }}" width="50"/>
+                            <h3>{{ item.name }}</h3>
+                            <small>{{ item.description }}</small>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="fancyright">
+    <a href="/otherprojects.html">> All Projects</a>
+</div>
+<h2>Socials</h2>
+<a href="https://github.com/Royce551" target="_blank">GitHub</a> |
+<!--<a href="https://twitter.com/royce771" target="_blank">Twitter</a> |  uncomment these when i clean up my social media presence lol-->
+<a href="https://www.twitch.tv/royce551" target="_blank">Twitch</a> <!--|-->
+<!--<a href="https://www.youtube.com/channel/UCN451ofYNd8yehDoWKNCfOQ" target="_blank">YouTube</a>-->
+
+<div class="centerpresentation">
+    <div class="dangerous">
+        <p>
+            I'm currently in the process of redesigning my site! Please excuse the wonky pages and broken links for now.
+        </p>
+    </div>
+</div>
