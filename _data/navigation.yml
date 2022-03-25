@@ -1,10 +1,10 @@
-- name: Squid Grill Home
-  link: /
+- name: Squid House Home
+  link: /SquidHouse/
 - name: FRESHMusicPlayer
   link: /FRESHMusicPlayer/
-- name: ShrimpBot
-  link: /shrimpbot/
+- name: squish
+  link: /squish/
 - name: News
-  link: news.html
+  link: /SquidHouse/news.html
 - name: Other Projects
-  link: /otherprojects.html
+  link: /SquidHouse/otherprojects.html

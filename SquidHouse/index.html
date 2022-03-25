@@ -14,6 +14,7 @@ title: Squid House Software
             height: 400px;
             overflow: hidden;
             position: relative;
+            border-radius: 7px;
         }
 
         .slider .slider-item {
@@ -22,6 +23,18 @@ title: Squid House Software
             display: none;
             position: absolute;
             transition: transform 400ms;
+        }
+
+        .slider-item {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: absolute;
+            transition: transform 400ms;
+            padding: 130px 0px 0px 90px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 20% 50%;
         }
 
         .slider .slider-item.active,
@@ -60,9 +73,15 @@ title: Squid House Software
         .slider-control-next {
             position: absolute;
             z-index: 20;
-            cursor: pointer;
             top: 50%;
             transform: translateY(-50%);
+            opacity: 0.5;
+            transition: opacity ease-out 200ms;
+        }
+
+        .slider-control-prev :hover,
+        .slider-control-next :hover {
+            opacity: 1;
         }
 
         .slider-control-prev {
@@ -85,60 +104,59 @@ title: Squid House Software
             height: 12px;
             width: 12px;
             border-radius: 50%;
-            background: #ffffff;
-            opacity: 0.5;
+            background: var(--control_color);
             margin: 0 8px;
         }
 
         .slide-indicator.active {
             opacity: 1;
+            background: var(--blue);
         }
     </style>
 </head>
 <body>
     <div class="cardbody">
+        {% include navigation.html %}
         <h2>News</h2>
         <div class="container">
             <div class="slider" onmouseover="onMouseEnterCarousel" onmouseout="onMouseLeaveCarousel">
-                <div class="slider-item active" style="background: var(--blue)">
-                    <p>i</p>
+                {% for post in site.posts limit:1 %}
+                <div class="slider-item active" style="{% if post.thumbnail == nil %} background-color: var(--secondary_color) {% else %} background-image: url({{ post.thumbnail }}){% endif %}">
+                    <div class="translucent-secondarycard" style="width: 55%">
+                        <h1>{{ post.title }}</h1>
+                        <p>
+                            {{ post.excerpt }}
+                        </p>
+                        <a href="{{ post.url }}"><button>Learn more</button></a>
+                    </div>
                 </div>
-                <div class="slider-item" style="background: var(--green)">
-                    <p>love</p>
+                {% endfor %}
+                {% for post in site.posts limit:2 offset: continue %}
+                <div class="slider-item" style="{% if post.thumbnail == nil %} background-color: var(--secondary_color) {% else %} background-image: url({{ post.thumbnail }}){% endif %}">
+                    <div class="translucent-secondarycard" style="width: 55%">
+                        <h1>{{ post.title }}</h1>
+                        <p>
+                            {{ post.excerpt }}
+                        </p>
+                        <a href="{{ post.url }}"><button>Learn more</button></a>
+                    </div>
                 </div>
-                <div class="slider-item" style="background: var(--red)">
-                    <p>catgirls</p>
-                </div>
+                {% endfor %}
                 <ol class="slide-indicators">
                     <li class="slide-indicator"></li>
                     <li class="slide-indicator"></li>
                     <li class="slide-indicator"></li>
                 </ol>
                 <button class="slider-control-prev">
-                    Back
+                    &lt
                 </button>
                 <button class="slider-control-next">
-                    Next
+                    >
                 </button>
             </div>
         </div>
-        <div class="list">
-            <ul>
-                {% for post in site.posts limit:4 %}
-                <li>
-                    <div class="secondarycard">
-                        <a href="{{ post.url }}">
-                            <h2>{{ post.title }}</h2>
-                            <h4>{{ post.date | date_to_string: "ordinal", "US" }}</h4>
-                            {{ post.excerpt | truncate: 100, '...'}}
-                        </a>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
         <div class="fancyright">
-            <a href="/news.html">> All Entries</a>
+            <a href="/SquidHouse/news.html">> All News</a>
         </div>
         <h2>Projects</h2>
         <div class="centerpresentation">
@@ -148,9 +166,11 @@ title: Squid House Software
                     {% if item.category contains "Featured" %}
                     <li>
                         <a href="{{ item.link }}">
-                            <img src="{{ item.icon }}" width="50" />
-                            <h3>{{ item.name }}</h3>
-                            <small>{{ item.description }}</small>
+                            <div class="secondarycard">
+                                <img src="{{ item.icon }}" width="50" />
+                                <h3>{{ item.name }}</h3>
+                                <small>{{ item.description }}</small>
+                            </div>
                         </a>
                     </li>
                     {% endif %}
@@ -159,20 +179,9 @@ title: Squid House Software
             </div>
         </div>
         <div class="fancyright">
-            <a href="/otherprojects.html">> All Projects</a>
+            <a href="/SquidHouse//otherprojects.html">> All Projects</a>
         </div>
-        <h2>Socials</h2>
-        <a href="https://github.com/Royce551" target="_blank">GitHub</a> |
-        <!--<a href="https://twitter.com/royce771" target="_blank">Twitter</a> |  uncomment these when i clean up my social media presence lol-->
-        <a href="https://www.twitch.tv/royce551" target="_blank">Twitch</a> <!--|-->
-        <!--<a href="https://www.youtube.com/channel/UCN451ofYNd8yehDoWKNCfOQ" target="_blank">YouTube</a>-->
-        <div class="centerpresentation">
-            <div class="dangerous">
-                <p>
-                    I'm currently in the process of redesigning my site! Please excuse the wonky pages and broken links for now.
-                </p>
-            </div>
-        </div>
+        {% include footer.html %}
         <script>
             class Slider {
                 constructor(sliderElem) {
@@ -299,7 +308,7 @@ title: Squid House Software
                 isMouseHovered = false;
             }
 
-            window.setInterval(autoAdvanceCarousel, 1000);
+            /*window.setInterval(autoAdvanceCarousel, 1000);*/
         </script>
     </div>
 </body>

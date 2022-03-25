@@ -1,15 +1,19 @@
 - name: FRESHMusicPlayer
   description: the freshest music player out there
   link: /FRESHMusicPlayer/
-  icon: assets/images/fmplogo.svg
+  icon: /assets/images/fmplogo.svg
   category: Featured
 - name: ShrimpBot
   description: all purpose discord bot
   link: https://github.com/royce551/shrimpbot
   icon: 
+- name: squish
+  description: .NET Linux desktop environment
+  link: https://github.com/royce551/squish
+  icon:
   category: Featured
-- name: Condownloader
-  description: small app for downloading and converting audio/videos, with multitasking support
+- name: FRESHJobs
+  description: extensible job manager with multitasking and scripting support (formerly Condownloader)
   link: https://github.com/Royce551/Condownloader
   icon: 
   category: Featured

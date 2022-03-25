@@ -3,6 +3,7 @@
   --secondary_text_color: #DADADA;
   --foreground_color: #2C2F33;
   --secondary_color: #323539;
+  --semi-transparent-secondary_color: rgba(50,53,57,.5);
   --background_color: black;
   --control_color: #40444A;
 
@@ -84,6 +85,12 @@ a:visited {
   background-color: var(--secondary_color);
   padding: 10px;
   border-radius: 7px;
+}
+.translucent-secondarycard {
+    background-color: var(--semi-transparent-secondary_color);
+    padding: 10px;
+    border-radius: 7px;
+    width: contain;
 }
 
 .centerpresentation {
