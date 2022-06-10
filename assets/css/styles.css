@@ -19,6 +19,26 @@
   --larger_font_size: 16px;
   --big_font_size: 18px;
 }
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary_text_color: black;
+        --secondary_text_color: #525252;
+        --foreground_color: #DEE0E3;
+        --secondary_color: #D3D6D9;
+        --semi-transparent-secondary_color: rgba(211,214,217,.9);
+        --background_color: #BDC0C7;
+        --control_color: #B5B9C0;
+        --blue: #338BC1;
+        --dark_blue: #295885;
+        --green: #69B578;
+        --red: #d5463f;
+        --sidebar_size: 200px;
+        --content_font_size: 14px;
+        --small_font_size: 9px;
+        --larger_font_size: 16px;
+        --big_font_size: 18px;
+    }
+}
 
 html {
   font-size: var(--content_font_size);
@@ -41,6 +61,7 @@ h1, h2, h3, h4 {
 
 hr {
   width: 100%;
+  color: var(--primary_text_color);
 }
 
 img {
@@ -67,6 +88,7 @@ button:hover {
   display: inline-block;
   background-color: var(--blue);
   border-color: var(--blue);
+  color: white;
 }
 
 a:link {
@@ -74,6 +96,10 @@ a:link {
 }
 a:visited {
   color: var(--blue);
+}
+
+.on-accent-color {
+    color: white;
 }
 
 .dangerous {
