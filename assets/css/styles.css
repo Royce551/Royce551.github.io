@@ -29,7 +29,7 @@
         --background_color: #BDC0C7;
         --control_color: #B5B9C0;
         --blue: #338BC1;
-        --dark_blue: #295885;
+        --dark_blue: #13293D;
         --green: #69B578;
         --red: #d5463f;
         --sidebar_size: 200px;
@@ -98,7 +98,7 @@ a:visited {
   color: var(--blue);
 }
 
-.on-accent-color {
+.white {
     color: white;
 }
 
