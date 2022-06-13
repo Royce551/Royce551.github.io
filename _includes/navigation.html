@@ -1,9 +1,10 @@
 <nav>
-    <div class="navbar">
+    <div class="navbar showonwidescreen">
         {% for item in site.data.navigation %}
         <a href="{{ item.link }}">
           {{ item.name }}
         </a>
       {% endfor %}
     </div>
+    <a href="/SquidHouse/index.html" class="hideonwidescreen"><button>Home</button></a>
   </nav>

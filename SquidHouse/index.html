@@ -73,7 +73,7 @@ title: Squid House Software
         .slider-control-next {
             position: absolute;
             z-index: 20;
-            top: 50%;
+            top: 93%;
             transform: translateY(-50%);
             opacity: 0.5;
             transition: opacity ease-out 200ms;
@@ -121,7 +121,14 @@ title: Squid House Software
             <div class="slider" onmouseover="onMouseEnterCarousel" onmouseout="onMouseLeaveCarousel">
                 {% for post in site.posts limit:1 %}
                 <div class="slider-item active" style="{% if post.thumbnail == nil %} background-color: var(--secondary_color) {% else %} background-image: url({{ post.thumbnail }}){% endif %}">
-                    <div class="translucent-secondarycard" style="width: 55%">
+                    <div class="translucent-secondarycard showonwidescreen" style="width: 55%">
+                        <h1>{{ post.title }}</h1>
+                        <p>
+                            {{ post.excerpt }}
+                        </p>
+                        <a href="{{ post.url }}"><button>Learn more</button></a>
+                    </div>
+                    <div class="translucent-secondarycard hideonwidescreen" style="margin: 0px 90px 0px -100px; padding: 20px 10px 400px 20px">
                         <h1>{{ post.title }}</h1>
                         <p>
                             {{ post.excerpt }}
@@ -132,7 +139,14 @@ title: Squid House Software
                 {% endfor %}
                 {% for post in site.posts limit:2 offset: continue %}
                 <div class="slider-item" style="{% if post.thumbnail == nil %} background-color: var(--secondary_color) {% else %} background-image: url({{ post.thumbnail }}){% endif %}">
-                    <div class="translucent-secondarycard" style="width: 55%">
+                    <div class="translucent-secondarycard showonwidescreen" style="width: 55%">
+                        <h1>{{ post.title }}</h1>
+                        <p>
+                            {{ post.excerpt }}
+                        </p>
+                        <a href="{{ post.url }}"><button>Learn more</button></a>
+                    </div>
+                    <div class="translucent-secondarycard hideonwidescreen" style="margin: 0px 90px 0px -100px; padding: 20px 10px 400px 20px">
                         <h1>{{ post.title }}</h1>
                         <p>
                             {{ post.excerpt }}
