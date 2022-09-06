@@ -5,14 +5,58 @@ title: Tidbits about me - Squid Grill
 
 <head>
     {% include htmlHead.html %}
+    <style>
+        html {
+            height: 100%;
+            margin: 0px;
+            background-image: url("/assets/images/background-dark.png");
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (prefers-color-scheme: light) {
+            html {
+                background-image: url("/assets/images/background-light.png");
+            }
+        }
+    </style>
 </head>
-<body style="display:flex;justify-content:center;align-items:center">
-    <div class="cardbody-nominimums specialflipin" style="max-width: 750px">
+
+<body>
+    <div class="cardbody-nominimums showonwidescreen" style="position: absolute; bottom: 15vh; right: 15vw; width: 500px; box-shadow: 0px 30px 50px -15px black">
         <div class="squidheader">
             <h1 class="white">Tidbits about me</h1>
         </div>
+        <a href="aboutme.html"><button>Back</button></a>
 
-        <a href="aboutme.html">Back</a>
+        <ul>
+            <li>
+                I was mainly inspired to start writing GUI apps by the <a href="https://crystalmark.info/en/">Shizuku editions</a> of
+                Crystal Dew World's software, which includes prominent anime character themes and sounds. The concept's pretty funny
+                and I wanted to make more apps like that :p
+            </li>
+            <li>
+                Apart from programming, I am also super interested in learning to draw and perhaps produce music in the future. I'm also
+                interested in everything infrastructure, like roads, railways, and airports.
+            </li>
+            <li>
+                I love songs from pretty much every genre. I genuinely couldn't tell you what my favorite song or genre is.
+            </li>
+            <li>
+                My favorite games include Minecraft, Cities: Skylines, and osu!.
+            </li>
+            <li>
+                My current PC has been in service since late 2018. It has an i5 8400, a GTX 1050Ti, and 8 GB of RAM.
+            </li>
+        </ul>
+    </div>
+
+    <div class="cardbody hideonwidescreen" style="position: absolute; top: 10%; left: 0%; right: 0%; bottom: 0%">
+        <div class="squidheader">
+            <h1 class="white">Tidbits about me</h1>
+        </div>
+        <a href="aboutme.html"><button>Back</button></a>
 
         <ul>
             <li>

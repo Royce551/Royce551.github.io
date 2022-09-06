@@ -23,11 +23,11 @@
     :root {
         --primary_text_color: black;
         --secondary_text_color: #525252;
-        --foreground_color: #DEE0E3;
-        --secondary_color: #D3D6D9;
+        --foreground_color: #E3E5E8;
+        --secondary_color: #DEE0E3;
         --semi-transparent-secondary_color: rgba(211,214,217,.9);
-        --background_color: #BDC0C7;
-        --control_color: #B5B9C0;
+        --background_color: #D6D9DB;
+        --control_color: #E9EBEC;
         --blue: #338BC1;
         --dark_blue: #13293D;
         --green: #69B578;
@@ -41,33 +41,46 @@
 }
 
 html {
-  font-size: var(--content_font_size);
-  font-family: 'IBM Plex Sans', sans-serif;
-  /*background: var(--background_color) url(/assets/images/cutetenshi.jpg) no-repeat center center fixed;
+    font-size: var(--content_font_size);
+    font-family: 'IBM Plex Sans', sans-serif;
+    /*background: var(--background_color) url(/assets/images/cutetenshi.jpg) no-repeat center center fixed;
   background-size: cover;*/
-  background: var(--background_color);
-  color: var(--primary_text_color);
-  margin-bottom: 0px;
+    background: var(--background_color);
+    color: var(--primary_text_color);
+    margin-bottom: 0px;
+    transition: all ease-out 200ms;
 }
 
 body {
-  min-height: 100vh;
+    min-height: 100vh;
+    transition: all ease-out 200ms;
+}
+
+p {
+    transition: all ease-out 200ms;
+}
+
+div {
+    transition: all ease-out 200ms;
 }
 
 h1, h2, h3, h4 {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    transition: all ease-out 200ms;
 }
 
 hr {
-  width: 100%;
-  color: var(--primary_text_color);
+    width: 100%;
+    color: var(--primary_text_color);
+    transition: all ease-out 200ms;
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  display: inline;
+    display: block;
+    margin: 0 auto;
+    display: inline;
+    transition: all ease-out 200ms;
 }
 
 button {
@@ -92,10 +105,12 @@ button:hover {
 }
 
 a:link {
-  color: var(--blue);
+    color: var(--blue);
+    transition: all ease-out 200ms;
 }
 a:visited {
-  color: var(--blue);
+    color: var(--blue);
+    transition: all ease-out 200ms;
 }
 
 .white {
