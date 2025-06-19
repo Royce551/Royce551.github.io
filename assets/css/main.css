@@ -1,0 +1,28 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark
+}
+
+@layer components {
+    .btn {
+        @apply bg-control dark:bg-dark-control hover:bg-blue rounded-md py-[10px] px-[20px] md:py-[5px] md:px-[10px]
+    }
+
+    .h1 {
+        @apply text-xl font-bold
+    }
+
+    .h2 {
+        @apply text-md font-bold
+    }
+
+    .h3 {
+        @apply text-bigger font-bold
+    }
+}

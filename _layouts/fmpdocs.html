@@ -1,81 +1,29 @@
-<!doctype html>
-<html>
-  <head>
-    {% include htmlHead.html %}
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs2015.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-  </head>
-  <body>
-    <div class="cardbody">
-
-        <div class="content">
-
-            <div class="sidebysideminorleft showonwidescreen">
-                <div class="sidebar">
-                    <small>FRESHMusicPlayer</small>
-
-                    <p><a href="index.html">Introduction</a></p>
-                    <p><a href="tour.html">Tour</a></p>
-                    <p><a href="playing.html">Playing Music</a></p>
-                    <p><a href="library.html">The Library</a></p>
-                    <p><a href="options.html">Options</a></p>
-                    <p><a href="credits.html">Credits</a></p>
-
-                    <small>FRESHMusicPlayer Core</small>
-
-                    <p><a href="corebasics.html">Basic Usage</a></p>
-                    <p><a href="corebackends.html">Audio Backends</a></p>
-                    <p><a href="corebreaking.html">Breaking Changes</a></p>
-                </div>
-            </div>
-
-            <div class="sidebysidemajorright">
-                <div>
-                    {% include navigation.html %}
-                    <div class="fmpheader">
-                        <div class="content">
-                            <nav>
-                                <small class="white"><a href="../index.html">Home</a> > Docs > {{ page.title }}</small>
-                                <h1 class="white">{{ page.title }}</h1>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="content">
-                        {{ content }}
-                    </div>
-
-                    <div class="sidebysideminorleft hideonwidescreen">
-                        <div class="secondarycard">
-                            <h2>Contents</h2>
-                            <div class="sidebar">
-                                <small>FRESHMusicPlayer</small>
-
-                                <p><a href="index.html">Introduction</a></p>
-                                <p><a href="tour.html">Tour</a></p>
-                                <p><a href="playing.html">Playing Music</a></p>
-                                <p><a href="library.html">The Library</a></p>
-                                <p><a href="options.html">Options</a></p>
-                                <p><a href="credits.html">Credits</a></p>
-
-                                <small>FRESHMusicPlayer Core</small>
-
-                                <p><a href="corebasics.html">Basic Usage</a></p>
-                                <p><a href="corebackends.html">Audio Backends</a></p>
-                                <p><a href="corebreaking.html">Breaking Changes</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-                    {% include footer.html %}
-                </div>
-            </div>
-
-
-           
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" class="bg-foreground dark:bg-dark-foreground text-primarytext dark:text-dark-primarytext transition-colors">
+<head>
+    {% include headitems.html %}
+</head>
+<body class="font-sourcesans">
+   {% include navigation.html %}
+        <div class="max-w-6xl m-auto py-[5px] px-[20px] text-sm">
+           <p><a class="underline text-blue" href="/FRESHMusicPlayer/index.html">FRESHMusicPlayer Home</a> > Documentation > {{ page.sectiontitle }}</p>
         </div>
-    
-  </body>
-</html>
+   <div class="bg-background dark:bg-dark-background transition-colors ">
+      <div class="max-w-6xl m-auto py-[20px] px-[20px]">
 
+         <div class="md:flex md:flex-row gap-5">
+            <div class="bg-secondary dark:bg-dark-secondary mt-[10px] mb-[10px] px-[20px] py-[10px] rounded-lg w-[150px] flex flex-col">
+               <a class="py-[5px]" href="index.html">Introduction</a>
+               <a class="py-[5px]" href="library.html">Library Management</a>
+               <a class="py-[5px]" href="playing.html">Playing Music</a>         
+               <a class="py-[5px]" href="settings.html">Settings</a>
+            </div>
+            <div class="mt-[10px] mb-[10px]">
+               {{ content }}
+            </div>
+         </div>
+      </div>
+   </div>
+   {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US" class="bg-foreground dark:bg-dark-foreground text-primarytext dark:text-dark-primarytext transition-colors">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>FRESHMusicPlayer Documentation - Squid House</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+<meta property="og:description" content="squiddy squiddy squid squid!">
+<meta property="og:site_name" content="Squid Grill">
+<meta property="og:title" content="FRESHMusicPlayer Documentation - Squid House">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://royce551.github.io">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="font-sourcesans">
+   <a href="" class="transition left-2 fixed -translate-y-16 focus:translate-y-0">Skip to content</a>
+<nav class="text-sm px-[20px] py-[5px]">
+    <div class="md:hidden">
+        <a href="/index.html">
+            <button class="btn">
+                Home
+            </button>
+        </a>
+    </div>
+    <div class="hidden md:flex flex-wrap overflow-hidden gap-5 max-w-6xl m-auto max-h-[54px] justify-around">
+        <a href="/index.html">
+            <img class="flex flex-col max-h-[50px] px-5 py-[2px] hover:bg-blue rounded-md" src="/assets/images/squidwordmark.png" />
+        </a>
+        
+        
+        <a href="/FRESHMusicPlayer/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/fmplogo.svg"/>
+                <span class="">FRESHMusicPlayer</span>
+            </div>
+        </a>
+        
+        <a href="/Condownloader/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/condownloader.svg"/>
+                <span class="">Condownloader</span>
+            </div>
+        </a>
+        
+        <a href="/Kotomi/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/placeholdericon.svg"/>
+                <span class="">Kotomi</span>
+            </div>
+        </a>
+        
+        <a href="/Chii/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/placeholdericon.svg"/>
+                <span class="">Chii</span>
+            </div>
+        </a>
+        
+    </div>
+</nav>
+        <div class="max-w-6xl m-auto py-[5px] px-[20px] text-sm">
+           <p><a class="underline text-blue" href="/FRESHMusicPlayer/index.html">FRESHMusicPlayer Home</a> > Documentation > The Library</p>
+        </div>
+   <div class="bg-background dark:bg-dark-background transition-colors ">
+      <div class="max-w-6xl m-auto py-[20px] px-[20px]">
+
+         <div class="md:flex md:flex-row gap-5">
+            <div class="bg-secondary dark:bg-dark-secondary mt-[10px] mb-[10px] px-[20px] py-[10px] rounded-lg w-[150px] flex flex-col">
+               <a class="py-[5px]" href="index.html">Introduction</a>
+               <a class="py-[5px]" href="library.html">Library Management</a>
+               <a class="py-[5px]" href="playing.html">Playing Music</a>         
+               <a class="py-[5px]" href="settings.html">Settings</a>
+            </div>
+            <div class="mt-[10px] mb-[10px]">
+               <h1 class="h1">The Library</h1>
+<p>The library represents your music collection.</p>
+
+<h2 class="h2 mt-[10px]">Adding Tracks</h2>
+<p>There are two main ways you can add tracks to your library: You can manually add tracks to your library, or you can have FRESHMusicPlayer automatically
+    scan and import audio files from one or more folders (Auto Import).</p>
+
+<h3 class="h3 mt-[10px]">Manually</h3>
+<p>To add tracks to your library, drag and drop files into the library portion of the window. The behavior of dragging and dropping changes depending on
+    your selected tab: In the Import tab, the dropped files will import only. In all of the other tabs, the dropped files will import and start playing immediately.</p>
+<img src="/assets/images/fmp/docs-librarydragdroparea.png" style="height:400px;" alt="A screenshot of FRESHMusicPlayer highlighting the library area"/>
+<p>Additionally, you can use the Import tab. In the Import tab, you can browse for tracks, playlist files, or folders, or manually type in a URL to import.</p>
+
+<h3 class="h3 mt-[10px]">Auto Import</h3>
+<p>To set up Auto Import, open Settings. Under General, you can choose the folders that you want to automatically import to your library. This is recursive, so
+    any folders within the folders that you have selected will be imported, too. FRESHMusicPlayer will continuously scan for new audio files in your Auto Import
+    folders, even if you add them while FRESHMusicPlayer is already running.</p>
+<img src="/assets/images/fmp/docs-autoimport.png" style="height:400px;" alt="A screenshot of FRESHMusicPlayer highlighting Auto Import in settings" />
+
+<p class="mt-[20px]">Imported tracks will immediately become available in the Tracks tab by file name -- however, the imported tracks will have to be processed first
+    before they become available elsewhere with their full metadata. This can take a while. You can see how many remaining tracks there are to be processed by opening
+    the Notifications pane.</p>
+<img src="/assets/images/fmp/docs-importnotification.png" style="height:300px;" alt="A screenshot of an import processing progress notification" />
+
+<h2 class="h2 mt-[10px]">Browsing the Library</h2>
+<p>Use the navbar on the top of the window to browse your library.</p>
+
+<h3 class="h3 mt-[10px]">Tracks Tab</h3>
+<p>In this tab, all tracks in your library are shown in alphabetical order.
+
+<h3 class="h3 mt-[10px]">Artists, Albums, and Playlists Tabs</h3>
+<p>In these tabs, select the artist, album, or playlist you want to view using the side pane. You can resize the side pane by dragging its edge.</p>
+<p class="mt-[10px]">In the artists and albums panes, if applicable, the artists or albums are grouped into albums (for artists), or discs (for albums). In the artists tab, you can
+    click the album headers to jump to that specific album in the albums tab.</p>
+
+<h3 class="h3 mt-[10px]">Search</h3>
+<p>In the search pane, you can search for tracks by title, artist, or album.</p>
+
+<p class="mt-[20px]">In all tabs, you can right click a track to add it to a playlist, go to its 1st artist or its album, or open it in File Explorer.</p>
+
+<h2 class="h2 mt-[10px]">Removing Tracks</h2>
+<p>To remove a track from the library, hover over it and click the red trash can icon. If you'd like to reset your entire library and start from scratch, press the
+    "Nuke library" button at the bottom of the Settings pane.</p>
+
+<h2 class="h2 mt-[10px]">Playlist Management</h2>
+<p>In Playlist Management, accessible from the Overflow Menu or from the library context menus, you can manage your playlists and add or remove tracks to your playlists.</p>
+
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="max-w-6xl m-auto px-[20px] py-[10px]">
+    <div class="flex flex-row justify-center">
+        <a class="px-[10px]" href="/privacy.html">Privacy</a>
+        <a class="px-[10px]" href="https://github.com/royce551/royce551.github.io">Source Code</a>
+        <a class="px-[10px]" href="/me.html">About</a>
+    </div>
+    <p class="text-center py-[10px] text-sm">Made with &hearts; by Squid Grill</p>
+    <p class="text-center text-sm text-secondarytext dark:text-dark-secondarytext">last updated 6/18/2025</p>
+</div>
+</body>
+</html>

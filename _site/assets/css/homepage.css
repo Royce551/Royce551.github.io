@@ -1,0 +1,76 @@
+@view-transition {
+    navigation: auto;
+}
+
+
+html {
+    height: 100%;
+    margin: 0px;
+    background-image: url("/assets/images/background-dark.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-image: url("/assets/images/background-light.png");
+    }
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    vertical-align: -0.125em;
+}
+
+.mainstyle {
+    position: absolute;
+    top: 35%;
+    left: 10vw;
+}
+
+.mainstyleoffsetless {
+    margin-left: 10vw;
+}
+
+@media (width < 60rem) {
+    html {
+        background-position: left top;
+    }
+
+    .mainstyle {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        margin: 50px;
+    }
+
+    .mainstyleoffsetless {
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@keyframes specialFlipIn {
+    0% {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.specialflipin {
+    animation: 5s cubic-bezier(0.190, 1.000, 0.000, 1.000) 1 specialFlipIn;
+}

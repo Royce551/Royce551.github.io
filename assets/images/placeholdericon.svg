@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="350" viewBox="0 0 350 350">
+  <defs>
+    <clipPath id="clip-placeholdericon">
+      <rect width="350" height="350"/>
+    </clipPath>
+  </defs>
+  <g id="placeholdericon" clip-path="url(#clip-placeholdericon)">
+    <rect id="Rectangle_69" data-name="Rectangle 69" width="315" height="315" rx="50" transform="translate(18 18)" fill="#707070"/>
+  </g>
+</svg>

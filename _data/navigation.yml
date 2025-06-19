@@ -1,10 +1,12 @@
-- name: Squidhouse Home
-  link: /SquidHouse/
 - name: FRESHMusicPlayer
   link: /FRESHMusicPlayer/
-- name: squish
-  link: /squish/
-- name: News
-  link: /SquidHouse/news.html
-- name: Other Projects
-  link: /SquidHouse/otherprojects.html
+  icon: /assets/images/fmplogo.svg
+- name: Condownloader
+  link: /Condownloader/
+  icon: /assets/images/condownloader.svg
+- name: Kotomi
+  link: /Kotomi/
+  icon: /assets/images/placeholdericon.svg
+- name: Chii
+  link: /Chii/
+  icon: /assets/images/placeholdericon.svg

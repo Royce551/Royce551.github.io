@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US" class="bg-foreground dark:bg-dark-foreground text-primarytext dark:text-dark-primarytext transition-colors">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>FRESHMusicPlayer Documentation - Squid House</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+<meta property="og:description" content="squiddy squiddy squid squid!">
+<meta property="og:site_name" content="Squid Grill">
+<meta property="og:title" content="FRESHMusicPlayer Documentation - Squid House">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://royce551.github.io">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="font-sourcesans">
+   <a href="" class="transition left-2 fixed -translate-y-16 focus:translate-y-0">Skip to content</a>
+<nav class="text-sm px-[20px] py-[5px]">
+    <div class="md:hidden">
+        <a href="/index.html">
+            <button class="btn">
+                Home
+            </button>
+        </a>
+    </div>
+    <div class="hidden md:flex flex-wrap overflow-hidden gap-5 max-w-6xl m-auto max-h-[54px] justify-around">
+        <a href="/index.html">
+            <img class="flex flex-col max-h-[50px] px-5 py-[2px] hover:bg-blue rounded-md" src="/assets/images/squidwordmark.png" />
+        </a>
+        
+        
+        <a href="/FRESHMusicPlayer/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/fmplogo.svg"/>
+                <span class="">FRESHMusicPlayer</span>
+            </div>
+        </a>
+        
+        <a href="/Condownloader/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/condownloader.svg"/>
+                <span class="">Condownloader</span>
+            </div>
+        </a>
+        
+        <a href="/Kotomi/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/placeholdericon.svg"/>
+                <span class="">Kotomi</span>
+            </div>
+        </a>
+        
+        <a href="/Chii/">
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="/assets/images/placeholdericon.svg"/>
+                <span class="">Chii</span>
+            </div>
+        </a>
+        
+    </div>
+</nav>
+        <div class="max-w-6xl m-auto py-[5px] px-[20px] text-sm">
+           <p><a class="underline text-blue" href="/FRESHMusicPlayer/index.html">FRESHMusicPlayer Home</a> > Documentation > Settings</p>
+        </div>
+   <div class="bg-background dark:bg-dark-background transition-colors ">
+      <div class="max-w-6xl m-auto py-[20px] px-[20px]">
+
+         <div class="md:flex md:flex-row gap-5">
+            <div class="bg-secondary dark:bg-dark-secondary mt-[10px] mb-[10px] px-[20px] py-[10px] rounded-lg w-[150px] flex flex-col">
+               <a class="py-[5px]" href="index.html">Introduction</a>
+               <a class="py-[5px]" href="library.html">Library Management</a>
+               <a class="py-[5px]" href="playing.html">Playing Music</a>         
+               <a class="py-[5px]" href="settings.html">Settings</a>
+            </div>
+            <div class="mt-[10px] mb-[10px]">
+               <h1 class="h1">Settings</h1>
+<p>These are all of the settings that FRESHMusicPlayer has, in the order they are shown.</p>
+
+<h2 class="h2 mt-[10px]">General</h2>
+<h3 class="h3 mt-[10px]">Language</h3>
+<p>Set your language, or set to Automatic to use your system language, if available</p>
+<h3 class="h3 mt-[10px]">Auto Queue</h3>
+<p>If enabled, when you play a track from the artists, albums, or playlists tab, the rest of the tracks in that collection will all be enqueued as well, similar
+    to how most streaming services work. This allows you to use the skip back and skip forward buttons to skip through the collection. However, the auto queue will
+    be overidden when you start enqueuing tracks manually.</p>
+<h3 class="h3 mt-[10px]">Auto Import</h3>
+<p>Set the folders here that you want FMP to automatically import. FMP will continuously scan for new audio files added to these folders, even if you add files while
+    FMP is actively running, and import them into your library.</p>
+<h3 class="h3 mt-[10px]">Integrations</h3>
+<p>- Discord Rich Presence: Integrates FMP with Discord Rich Presence. FMP will also attempt to locate the album on MusicBrainz and use that to show the playing track's
+    cover art in your presence, however, this may be wrong. If the track has a MusicBrainz ID embedded, it will always use that instead, getting more reliable results.</p>
+<p>- System Transport Controls: Integrates FMP with your system. This allows you to see playing track information in various places around your system and also enables
+    you to use your media keys system-wide.</p>
+<p>- last.fm: Integrates FMP with last.fm. Check the box, then follow the prompts to log in to last.fm. You can log out afterward by unchecking the box. FMP will both send
+    scrobbles and update your current now playing song.</p>
+<h3 class="h3 mt-[10px]">Updates</h3>
+<p>If you are using the installer version of FMP, you can manage updates here. Auto update modes are as follows:</p>
+<ul>
+    <li>- Manual: FMP will not check for updates on startup, you will have to use the button in settings</li>
+    <li>- Automatic: FMP will check for and install updates on startup, and then will restart automatically once installed.</li>
+    <li>- Prompt before updating: FMP will check for and install updates on startup, but will send you a notification prompting you to restart once the update is installed.</li>
+</ul>
+
+<h2 class="h2 mt-[10px]">Playback</h2>
+<h3 class="h3 mt-[10px]">ReplayGain</h3>
+<p>Enable ReplayGain to use the ReplayGain information embedded in your audio files to normalize the percieved loudness of all of the songs you listen to. You can set
+    whether you prefer to use the track or the album adjustment values (if one isn't available, then the other will be used), and set a pre-amp for files with
+    ReplayGain information. Note that even if you set the value above 0, FMP will not allow the audio to peak (according to the embedded peak information), which might
+    reduce dynamics.</p>
+<h3 class="h3 mt-[10px]">Equalizer</h3>
+<p>Use the sliders to set your preferred EQ -- you can use the buttons on top to use a prefix. Note that if you are using backend plugins, EQ will only apply if the
+    track you're listening to uses a backend that supports EQ.</p>
+
+<h2 class="h2 mt-[10px]">Apperance</h2>
+<p>- Show time instead of title in window title: If enabled, the initial part of the window's name will show playback progress instead of the name of the current song.
+    This is useful if you have taskbar labels enabled in Windows.</p>
+<p>- Show track progress in taskbar: If enabled, the track progress will be displayed as task progress in the taskbar. This has the best results on Windows 11. Keep in
+    mind that this may interfere with screen readers.</p>
+<h3 class="h3 mt-[10px]">Theme</h3>
+<p>Set your preferred color theme</p>
+<h3 class="h3 mt-[10px]">Accent color</h3>
+<p>Set your preferred accent color. If set to "match cover art", the accent color will be the most prevalent colors in the currently playing track's cover art.</p>
+
+<h2 class="h2 mt-[10px]">Maintenance</h2>
+<p>Reset settings to default: Does what it says on the tin.</p>
+<p>Clean and update library: This removes duplicate track entries from the library, then triggers a metadata rescan on your entire library. Use this if you have
+    changed the metadata of a lot of the tracks on your library.</p>
+<p>Nuke library: Clears your entire library</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="max-w-6xl m-auto px-[20px] py-[10px]">
+    <div class="flex flex-row justify-center">
+        <a class="px-[10px]" href="/privacy.html">Privacy</a>
+        <a class="px-[10px]" href="https://github.com/royce551/royce551.github.io">Source Code</a>
+        <a class="px-[10px]" href="/me.html">About</a>
+    </div>
+    <p class="text-center py-[10px] text-sm">Made with &hearts; by Squid Grill</p>
+    <p class="text-center text-sm text-secondarytext dark:text-dark-secondarytext">last updated 6/18/2025</p>
+</div>
+</body>
+</html>

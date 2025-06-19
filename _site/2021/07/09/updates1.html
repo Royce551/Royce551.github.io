@@ -1,0 +1,53 @@
+<p>Hello and welcome to the first edition of my development updates! FMP continues to be my main gig, but I’ve been branching out to other things.</p>
+
+<h1 id="freshmusicplayer">FRESHMusicPlayer</h1>
+
+<h2 id="freshmusicplayer-for-mac-and-linux">FRESHMusicPlayer for Mac and Linux</h2>
+<p>I’ve made some pretty major progress with FMP fmal! I’ve started porting SIADL to Avalonia, the UI framework I’m using. It almost looks like the Windows version of FMP now.</p>
+
+<p><img src="https://user-images.githubusercontent.com/31809541/125027204-81378300-e04b-11eb-8fee-707796a1e49c.png" width="350px" /></p>
+
+<p>There’s still a few things that are off, such as the Navbar buttons on the top and the volume slider, but we’re getting a lot closer.<br />
+Since all of these styles are colors are implemented in a separate library, it should be a lot easier for me to make new SIADL apps.</p>
+
+<p>The only things left to implement are the tag editor, searching, notifications, and the mini player. If everything goes to plan,
+I should be able to release FMP for Mac and Linux in a few weeks. It’s super exciting seeing FMP actually running well outside of Windows!</p>
+
+<h2 id="freshmusicplayer-11">FRESHMusicPlayer 11</h2>
+<p>I haven’t started working on FRESHMusicPlayer 11 yet, but I do have a roadmap now. For this release, I’m hoping to improve the core music playing parts of FMP.</p>
+<ul>
+  <li>Fullscreen view</li>
+  <li>Gapless playback</li>
+  <li>Equalization</li>
+  <li>Speed/pitch adjustment</li>
+  <li>“Skip protection”</li>
+</ul>
+
+<p>Keep in mind though that I usually don’t end up implementing <em>everything</em> from the roadmaps. They’re just things I’d like to have.</p>
+
+<h2 id="future-of-freshmusicplayer-for-windows">Future of FRESHMusicPlayer (for Windows)</h2>
+<p>Some people have asked me why I’m still maintaining a separate Windows version of FMP, even though FMP fmal already runs perfectly on Windows. There’s a few reasons why I
+don’t want to drop the Windows only version just yet:</p>
+
+<h3 id="updater">Updater</h3>
+<p>FMP uses <a href="https://github.com/squirrel/squirrel.windows">Squirrel.Windows</a> to handle its updates. It’s an amazing library that allows FMP to have a buttery smooth updating
+experience, but unfortunately, it works with .NET Framework only, with no apparent plans to add .NET Core/5+ support, which means that I’ll need to find a replacement.
+For now, I have my eyes on osu!lazer’s roadmap, where they also have plans to replace Squirrel with their own updater in a few months. If I can’t adapt their system to work
+with FMP, though, I might be able to create my own system.</p>
+
+<h3 id="missing-features">Missing features</h3>
+<p>Although Avalonia is already really good, there’s still a few missing features that don’t make it as nice as WPF. For example, type to search in lists isn’t currently
+available, and as far as I’m aware, there is no support for Right To Left.</p>
+
+<h3 id="resource-usage">Resource usage</h3>
+<p>This one isn’t as big of a deal has the updater; Because Avalonia and .NET 5 aren’t preinstalled on everyone’s systems, they have to be bundled with FMP. The resulting
+executable is around 60MB big (compared to the current &lt; 5MB).</p>
+
+<p>My current plan is to maintain both the Windows and cross platform versions of FMP for the next few months, and then reconsider dropping the Windows only version.</p>
+
+<h1 id="squidphotos-and-condownloader">Squidphotos and Condownloader</h1>
+<p>I’m soon going to start working on cross platform versions of <a href="https://github.com/Royce551/Squidphotos">Squidphotos</a> and <a href="https://github.com/Royce551/Condownloader">Condownloader</a>
+and hope to release them this month or next month!</p>
+
+<h2 id="thats-all">That’s all!</h2>
+<p>Thanks for reading!</p>

@@ -2,7 +2,7 @@
 layout: post
 title: Test Post
 tags: te te te
-thumbnail: /assets/images/fmplogo.svg
+thumbnail: 
 ---
 
 Hi! This is the first post on the squid blog. Just testing if stuff works!

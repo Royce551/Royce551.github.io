@@ -1,66 +1,86 @@
 ---
-layout: defaultwithcodehighlighting
-title: "FRESHMusicPlayer Downloads"
+layout: default
+title: "FRESHMusicPlayer Downloads - Squid House"
 ---
 
-<div class="fmpheader">
-    <div class="content">
-        <nav>
-            <small class="white"><a href="index.html">Home</a> > Downloads</small>
-            <h1 class="white">FRESHMusicPlayer Downloads</h1>
-        </nav>
+<div class="bg-foreground dark:bg-dark-foreground to-[#5EA7D4] from-[#338BC1]">
+    <div class="max-w-6xl m-auto py-[5px] px-[20px] text-sm">
+        <p><a class="underline text-blue" href="index.html">FRESHMusicPlayer Home</a> > Downloads</p>
     </div>
 </div>
+<div class="">
+    <div class="max-w-6xl m-auto py-[20px] px-[20px]">
+ 
+            <h1 class="h1">Download FRESHMusicPlayer</h1>
+            <div class="flex justify-start">
+                <a href="/privacy.html" class="text-blue underline mr-[20px]"><p>Privacy Policy</p></a>
+                <a href="https://github.com/Royce551/FRESHMusicPlayer/releases" class="text-blue underline mr-[20px]"><p>Release notes &amp; older releases</p></a>
+                <a href="https://github.com/Royce551/FRESHMusicPlayer-WindowsBlueprint-Releases/releases" class="text-blue underline mr-[20px]"><p>Blueprint releases</p></a>
+            </div>
 
-<div class="sidebysideleft">
-    <div class="content">
-        <img src="/assets/images/fmplogo.svg" width="60" />
-        <h2> FRESHMusicPlayer </h2>
+            <div class="bg-foreground dark:bg-dark-foreground rounded-lg px-[20px] py-[10px] mt-[10px]">
+                <h2 class="h2 mb-[10px]">Windows</h2>
+                <div class="flex gap-5">
+                    <a href="https://github.com/royce551/freshmusicplayer/releases/latest/download/Setup.exe" class="">
+                        <button class="btn">
+                            <p class="text-bold">Download latest installer</p>
+                        </button>
+                    </a>
+                    <a href="https://github.com/royce551/freshmusicplayer/releases/latest/download/Standalone.zip" class="">
+                        <button class="btn">
+                            <p class="text-bold">Download latest standalone</p>
+                        </button>
+                    </a>
+                </div>
+                <h3 class="h3 mt-[20px]">System Requirements</h3>
+                <p>Runs on Windows 7 and later</p>
+                <p>Requires .NET Framework 4.8. This is bundled with newer versions of Windows, but on older versions, you might have to grab it <a href="https://dotnet.microsoft.com/download" class="text-blue underline">here</a></p>
+            </div>
 
-        <a href="https://github.com/royce551/freshmusicplayer/releases/latest/download/Setup.exe"><button>Download latest installer (~3MB)</button></a>
-        <a href="https://github.com/royce551/freshmusicplayer/releases/latest/download/Standalone.zip"><button>Download latest standalone (~2MB)</button></a>
+            <div class="bg-foreground dark:bg-dark-foreground rounded-lg px-[20px] py-[10px] mt-[10px]">
+                <h2 class="h2 mb-[10px]">Other Platforms</h2>
+                <p>Sorry, FRESHMusicPlayer isn't available for other platforms yet :(</p>
+                <p>Cross platform support is planned for the next major release!</p>
+            </div>
 
-        <p><a href="https://github.com/royce551/freshmusicplayer/releases/latest">Changelogs, MSI installers, older releases</a></p>
-
-        <div class="secondarycard">
-            <h3>System Requirements</h3>
-            <p>Runs on Windows 7 and later.</p>
-            <p>
-                Requires .NET Framework 4.7.2; this is bundled with newer versions of Windows, on older versions, you might have to grab it
-                <a href="https://dotnet.microsoft.com/download">here.</a>
-            </p>
+            <!--<h2 class="h2 mt-[20px] pb-[10px]">Additional Downloads</h2>
+    <div class="flex gap-5 justify-stretch">
+        <div class="bg-foreground dark:bg-dark-secondary rounded-lg px-[20px] py-[10px]">
+            <h3 class="font-bold pb-[10px]">FRESHMusicPlayer Favorites</h3>
+            <p class="pb-[5px]">Utility for viewing your playtime logs</p>
+            <a href="aaa"><button class="btn">Download</button></a>
         </div>
-    </div>
-</div>
-<div class="sidebysideright">
-    <div class="content">
-        <img src="/assets/images/fmp/fmp-macOSIcon.svg" width="60" />
-        <h2> FRESHMusicPlayer for Mac and Linux</h2>
-
-        <a href="https://github.com/royce551/FRESHMusicPlayer-MacLinux-Releases/releases/latest/download/macos-x64.dmg"><button>Download for Intel (~110MB)</button></a>
-        <a href="https://github.com/royce551/FRESHMusicPlayer-MacLinux-Releases/releases/latest/download/macos-arm64.dmg"><button>Download for Apple Silicon (~100MB)</button></a>
-
-        <hr />
-
-        <a href="https://github.com/royce551/FRESHMusicPlayer-MacLinux-Releases/releases/latest/download/linux.zip"><button>Download latest standalone (???MB)</button></a>
-        <a href="https://github.com/royce551/FRESHMusicPlayer-MacLinux-Releases/releases/latest/download/linux.zip"><button>Download latest AppImage (???MB)</button></a>
-        <h4>Prefer a Flatpak?</h4>
-        <p><code>flatpak remote-add vicr123-partner-blueprint https://vicr123.com/flatpak-assets/vicr123-partner-blueprint.flatpakrepo</code></p>
-
-        <p><a href="https://github.com/royce551/FRESHMusicPlayer-MacLinux-Releases/releases/latest">Changelogs, older releases</a></p>
-
-        <div class="secondarycard">
-            <h3>System Requirements</h3>
-            <p>Runs on MacOS High Sierra, Debian 9, Ubuntu 16.5, Fedora 30, and later</p>
-            <small>(possibly other systems that run .NET 6)</small>
+        <div class="bg-foreground dark:bg-dark-secondary rounded-lg px-[20px] py-[10px]">
+            <h3 class="font-bold pb-[10px]">CD Backend</h3>
+            <p class="pb-[5px]">Enables FMP to play CDs</p>
+            <a href="aaa"><button class="btn">Download</button></a>
         </div>
+        <div class="bg-foreground dark:bg-dark-secondary rounded-lg px-[20px] py-[10px]">
+            <h3 class="font-bold pb-[10px]">YouTube Backend</h3>
+            <p class="pb-[5px]">Enables FMP to play YouTube videos</p>
+            <a href="aaa"><button class="btn">Download</button></a>
+        </div>
+    </div>-->
+ 
+        <!--<div class="">
+            <h2 class="h2 mt-[12px] pb-[10px]">Release Notes</h2>
+            <div class="flex gap-5 justify-stretch flex-col">
+                <div class="bg-foreground dark:bg-dark-secondary rounded-lg px-[20px] py-[10px]">
+                    <h3 class="font-bold pb-[10px]">Ver. 11.2</h3>
+                    <p class="pb-[5px]">Placeholder placeholder placeholder placeholder</p>
+                </div>
+                <div class="bg-foreground dark:bg-dark-secondary rounded-lg px-[20px] py-[10px]">
+                    <h3 class="font-bold pb-[10px]">Ver. 11.1</h3>
+                    <p class="pb-[5px]">Placeholder</p>
+                </div>
+                <div class="bg-foreground dark:bg-dark-secondary rounded-lg px-[20px] py-[10px]">
+                    <h3 class="font-bold pb-[10px]">Ver. 11</h3>
+                    <p class="pb-[5px]">Placeholder</p>
+                </div>
+            </div>
+        </div>-->
     </div>
-</div>
+    
+    
 
-<div class="content">
-    <small>* Although the 2 are designed to have similar UIs, they are different apps, and plugins designed for one won't work for the other.</small>
-    <p><a href="blueprintdownloads.html">Want to live on the cutting edge?</a></p>
-
-    <h2>Extra tools and plugins</h2>
-    <p>coming soon :)</p>
 </div>

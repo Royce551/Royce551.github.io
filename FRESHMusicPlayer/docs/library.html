@@ -1,39 +1,53 @@
 ---
 layout: fmpdocs
-title: "The Library"
+title: "FRESHMusicPlayer Documentation - Squid House"
+sectiontitle: "The Library"
 ---
 
-<img src="/assets/images/fmp/docs-library.png" width="600px"/>
+<h1 class="h1">The Library</h1>
 <p>The library represents your music collection.</p>
 
-<h1>Add stuff</h1>
-<p>There's 2 ways to add stuff to the library</p>
-<ul>
-    <li>
-        <p>Drag and Drop</p>
-        <p>
-            You can drag and drop a file or folder to import it. Be careful not to drop
-            it into the controls box; that'll play it without importing!
-        </p>
-    </li>
-    <li>
-        <p>Import Page</p>
-        <p>
-            The Import page offers a variety of ways to add tracks to your library.
-        </p>
-    </li>
-</ul>
+<h2 class="h2 mt-[10px]">Adding Tracks</h2>
+<p>There are two main ways you can add tracks to your library: You can manually add tracks to your library, or you can have FRESHMusicPlayer automatically
+    scan and import audio files from one or more folders (Auto Import).</p>
 
-<h1>Play stuff</h1>
-<p>The Tracks, Artists, Albums, and Playlists pages provide a variety of ways to view your library.</p>
-<p>
-    In the Artists, Albums, and Playlists pages, the pane on the left selects the artist, album, or playlist
-    you want. You can also drag the edge to make it larger, if you need to.
-</p>
-<p>
-    The bar on the bottom shows how many tracks are displayed, followed by how long all of them are. 
-    Press the Enqueue All button to add all visible tracks to the queue, and press the Play All button to play all visible tracks.
-</p>
+<h3 class="h3 mt-[10px]">Manually</h3>
+<p>To add tracks to your library, drag and drop files into the library portion of the window. The behavior of dragging and dropping changes depending on
+    your selected tab: In the Import tab, the dropped files will import only. In all of the other tabs, the dropped files will import and start playing immediately.</p>
+<img src="/assets/images/fmp/docs-librarydragdroparea.png" style="height:400px;" alt="A screenshot of FRESHMusicPlayer highlighting the library area"/>
+<p>Additionally, you can use the Import tab. In the Import tab, you can browse for tracks, playlist files, or folders, or manually type in a URL to import.</p>
 
-<h1>Search your library</h1>
-<p>Click the search icon in the Navbar to bring up the search auxiliary pane. Then, start typing an artist, title, or album.</p>
+<h3 class="h3 mt-[10px]">Auto Import</h3>
+<p>To set up Auto Import, open Settings. Under General, you can choose the folders that you want to automatically import to your library. This is recursive, so
+    any folders within the folders that you have selected will be imported, too. FRESHMusicPlayer will continuously scan for new audio files in your Auto Import
+    folders, even if you add them while FRESHMusicPlayer is already running.</p>
+<img src="/assets/images/fmp/docs-autoimport.png" style="height:400px;" alt="A screenshot of FRESHMusicPlayer highlighting Auto Import in settings" />
+
+<p class="mt-[20px]">Imported tracks will immediately become available in the Tracks tab by file name -- however, the imported tracks will have to be processed first
+    before they become available elsewhere with their full metadata. This can take a while. You can see how many remaining tracks there are to be processed by opening
+    the Notifications pane.</p>
+<img src="/assets/images/fmp/docs-importnotification.png" style="height:300px;" alt="A screenshot of an import processing progress notification" />
+
+<h2 class="h2 mt-[10px]">Browsing the Library</h2>
+<p>Use the navbar on the top of the window to browse your library.</p>
+
+<h3 class="h3 mt-[10px]">Tracks Tab</h3>
+<p>In this tab, all tracks in your library are shown in alphabetical order.
+
+<h3 class="h3 mt-[10px]">Artists, Albums, and Playlists Tabs</h3>
+<p>In these tabs, select the artist, album, or playlist you want to view using the side pane. You can resize the side pane by dragging its edge.</p>
+<p class="mt-[10px]">In the artists and albums panes, if applicable, the artists or albums are grouped into albums (for artists), or discs (for albums). In the artists tab, you can
+    click the album headers to jump to that specific album in the albums tab.</p>
+
+<h3 class="h3 mt-[10px]">Search</h3>
+<p>In the search pane, you can search for tracks by title, artist, or album.</p>
+
+<p class="mt-[20px]">In all tabs, you can right click a track to add it to a playlist, go to its 1st artist or its album, or open it in File Explorer.</p>
+
+<h2 class="h2 mt-[10px]">Removing Tracks</h2>
+<p>To remove a track from the library, hover over it and click the red trash can icon. If you'd like to reset your entire library and start from scratch, press the
+    "Nuke library" button at the bottom of the Settings pane.</p>
+
+<h2 class="h2 mt-[10px]">Playlist Management</h2>
+<p>In Playlist Management, accessible from the Overflow Menu or from the library context menus, you can manage your playlists and add or remove tracks to your playlists.</p>
+

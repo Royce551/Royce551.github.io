@@ -1,146 +1,80 @@
 ---
-layout: special
-title: Squid Grill
+layout: default
+title: "Home - Squid House"
 ---
 
-<head>
-    {% include htmlHead.html %}
-    <style>
-        html {
-            height: 100%;
-            margin: 0px;
-            background-image: url("/assets/images/background-dark.png");
-            background-position: left;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        @media (prefers-color-scheme: light) {
-            html {
-                background-image: url("/assets/images/background-light.png");
-            }
-        }
-    </style>
-</head>
+<!--<div class="bg-secondary dark:bg-dark-secondary flex flex-nowrap overflow-x-scroll p-[20px] gap-8 snap-x snap-mandatory">
+    {% for item in site.posts %}
+        <div class="snap-center px-[10px] lg:px-[80px] py-[100px] bg-foreground/50 dark:bg-dark-foreground/50 min-w-[100%] lg:min-w-[90%] bg-control dark:bg-dark-control bg-no-repeat bg-cover bg-center rounded-md" style="background-image: url('{{ item.thumbnail }}');">
+            <p class="text-md font-bold">{{ item.title }}</p>
+            <p>{{ item.excerpt }}</p>
 
-<body>
-    <div class="cardbody-nominimums specialflipin showonwidescreen" style="position: absolute; bottom: 15vh; right: 15vw; width: 300px; box-shadow: 0px 30px 50px -15px black">
-        <div class="squidheader">
-            <h1 class="white">Hi, I'm Royce!</h1>
-            <p class="white" style="margin: -1px 0px 0px 0px">a "profreshional" .NET dev</p>
+            <button class="btn mt-[100px]">
+                Learn more
+            </button>
         </div>
+    {% endfor %}
+</div>-->
+<div class="max-w-6xl m-auto py-[20px] px-[20px]">
+    <h1 class="text-xl font-bold pb-[20px]">Welcome to the Squid House!</h1>
+    <p>This is the place for all of the apps and utilities we've made over the years. Hopefully you'll find some of them useful :)</p>
 
-        <a href="aboutme.html"><button>About me</button></a><br />
-        <a href="SquidHouse"><button>Personal blog</button></a><br/>
-        <small>⬇ check out my projects here!</small><br />
-        <a href="SquidHouse"><button>Squid House Software</button></a>
+    <p class="mt-[20px]">Under construction! Welcome to the new version of my site -- most things have been moved over, but unfortunately the blog has not yet. Also, a lot
+    of the links are still broken. Sorry for the inconvenience!</p>
 
+    <div class="flex flex-wrap gap-2 flex-col pt-[20px]">
+        <a href="/FRESHMusicPlayer/">
+            <div class="rounded-lg px-[50px] py-[20px] h-[260px] w-[100%] hover:ring-4 ring-blue bg-gradient-to-t dark:from-[#13293D] dark:to-[#1E4161] to-[#5EA7D4] from-[#338BC1]">
+                <img src="/assets/images/fmp/fullfmplogo.png" alt="FRESHMusicPlayer" class="w-[350px] mb-[10px] md:w-[500px]" />
+                <span class="py-[50px] text-dark-primarytext">the freshest music player out there</span><br />
 
-        <h3>Contact me</h3>
-        <a href="https://github.com/royce551">
-            <button>
-                <svg class="fa-icon" color="var(--primary_text_color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
-            </button>
-        </a>
-
-        <a href="mailto:poohwie2005@gmail.com">
-            <button>
-                <svg class="fa-icon" fill="var(--primary_text_color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg>
-            </button>
-        </a>
-    </div>
-
-    <div class="cardbody hideonwidescreen" style="position: absolute; top: 50%; left: 0%; right: 0%; bottom: 0%">
-        <div class="squidheader">
-            <h1 class="white">Hi, I'm Royce!</h1>
-            <p class="white" style="margin: -1px 0px 0px 0px">a "profreshional" .NET dev</p>
-        </div>
-
-        <a href="aboutme.html"><button>About me</button></a><br />
-        <a href="SquidHouse"><button>Personal blog</button></a><br />
-        <small>⬇ check out my projects here!</small><br />
-        <a href="SquidHouse"><button>Squid House Software</button></a>
-
-
-        <h3>Contact me</h3>
-        <a href="https://github.com/royce551">
-            <button>
-                <svg class="fa-icon" color="var(--primary_text_color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
-            </button>
-        </a>
-
-        <a href="mailto:poohwie2005@gmail.com">
-            <button>
-                <svg class="fa-icon" fill="var(--primary_text_color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg>
-            </button>
-        </a>
-    </div>
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<body style="display:flex;justify-content:center;align-items:center;">
-    <div class="cardbody-nominimums specialflipin">
-        <div class="squidheader">
-            <h1 class="white">Hi! I'm Royce</h1>
-            <p class="white" style="margin: -3px 0px 0px 0px">"profreshional" .NET dev</p>
-        </div>
-        
-        <div class="centerpresentation">
-            <div class="list">
-                <ul>
-                    <li>
-                        <a href="SquidHouse"><button><div class="github-logo"></div>Squid House Software</button></a>
-                        <a href="SquidHouse"><button>Personal Blog</button></a>
-                        <a href="aboutme.html"><button>About me!</button></a>
-                    </li>
-                </ul>
+                <button class="btn mt-[20px]">
+                    Project page
+                </button>
             </div>
-        </div>
-        
-        <div class="centerpresentation">
-            <div class="list">
-                <ul>
-                    <li>
-                        <a href="https://github.com/royce551">
-                            <button>
-                                <svg class="fa-icon" color="var(--primary_text_color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
-                            </button>
-                        </a>
-                    </li>
-                </ul>
+        </a>
+        <a href="/Condownloader/">
+            <div class="rounded-lg px-[50px] py-[20px] h-[260px] w-[100%] hover:ring-4 ring-blue bg-gradient-to-t dark:to-[#9E3432] dark:from-[#6B201F] to-[#EE4D4A] from-[#A13531]">
+                <img src="/assets/images/condownloaderlogofull.png" alt="Condownloader" class="w-[350px] mb-[10px] md:w-[500px]" />
+                <span class="py-[50px] text-dark-primarytext">smol audio/video downloading/converting utility</span><br />
+
+                <button class="btn mt-[20px]">
+                    Project page
+                </button>
             </div>
+        </a>
+        <a href="/Kotomi/">
+            <div class="rounded-lg px-[50px] py-[20px] h-[260px] w-[100%] hover:ring-4 ring-blue bg-foreground dark:bg-dark-foreground">
+                <img src="/assets/images/kotomilogofull.png" alt="Kotomi" class="w-[350px] mb-[10px] md:w-[500px]" />
+                <span class="py-[50px] text-dark-primarytext">coming soon: manga reader</span><br />
+
+                <button class="btn mt-[20px]">
+                    Project page
+                </button>
+            </div>
+        </a>
+        <a href="/Chii/">
+            <div class="rounded-lg px-[50px] py-[20px] h-[260px] w-[100%] hover:ring-4 ring-blue bg-foreground dark:bg-dark-foreground">
+                <img src="/assets/images/chiilogofull.png" alt="Chii" class="w-[350px] mb-[10px] md:w-[500px]" />
+                <span class="py-[50px] text-dark-primarytext">coming soon: dictionary app</span><br />
+
+                <button class="btn mt-[20px]">
+                    Project page
+                </button>
+            </div>
+        </a>
+        <!--{% for item in site.data.projects %}
+        {% if item.category == "Featured" %}
+        <div class="bg-foreground dark:bg-dark-foreground rounded-lg px-[50px] py-[20px] h-[300px] w-[100%] hover:bg-blue {{ background }}">
+            <img src="{{ item.wordmark }}" alt="{{ item.name }}" class="w-[350px] md:w-[500px]" />
+            <span class="py-[20px]">{{ item.description }}</span><br />
+
+            <button class="btn mt-[70px]">
+                Project page
+            </button>
         </div>
-        
+        {% endif %}
+        {% endfor %}-->
     </div>
-</body>-->
+    <a href="aaa" class="text-right text-md"><p>All projects ></p></a>
+</div>

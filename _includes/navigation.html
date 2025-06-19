@@ -1,10 +1,24 @@
-<nav>
-    <div class="navbar showonwidescreen">
+<a href="" class="transition left-2 fixed -translate-y-16 focus:translate-y-0">Skip to content</a>
+<nav class="text-sm px-[20px] py-[5px]">
+    <div class="md:hidden">
+        <a href="/index.html">
+            <button class="btn">
+                Home
+            </button>
+        </a>
+    </div>
+    <div class="hidden md:flex flex-wrap overflow-hidden gap-5 max-w-6xl m-auto max-h-[54px] justify-around">
+        <a href="/index.html">
+            <img class="flex flex-col max-h-[50px] px-5 py-[2px] hover:bg-blue rounded-md" src="/assets/images/squidwordmark.png" />
+        </a>
+        
         {% for item in site.data.navigation %}
         <a href="{{ item.link }}">
-          {{ item.name }}
+            <div class="flex flex-col w-[150px] px-10 py-[2px] place-items-center hover:bg-blue rounded-md">
+                <img class="w-8 h-8" src="{{ item.icon }}"/>
+                <span class="">{{ item.name }}</span>
+            </div>
         </a>
-      {% endfor %}
+        {% endfor %}
     </div>
-    <a href="/SquidHouse/index.html" class="hideonwidescreen"><button>Home</button></a>
-  </nav>
+</nav>
